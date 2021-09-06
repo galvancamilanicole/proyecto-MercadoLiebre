@@ -87,7 +87,8 @@ body {
 
 /* Main Home*/
 .main-section{
-    margin: 5px auto;
+    margin: 0 auto;
+    padding-bottom: 5px;
     width: 100%;
 }
 
@@ -199,7 +200,7 @@ main section{
 }
 
 .profile-type{
-    width:40%;
+    width:30%;
     display:flex;
 }
 
@@ -224,7 +225,7 @@ main section{
     border:none;
     border-radius: 5%;
     margin:5px;
-    width: 15%;
+
 }
 /*  */
 
