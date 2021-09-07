@@ -9,8 +9,11 @@ body {
 
 /* Header */
 .main-header{
-    background-color: #EAC926;
     width: 100%;
+}
+
+.main-header div{
+    background-color: #EAC926;
 }
 
 .main-header-top{
@@ -22,6 +25,7 @@ body {
 
 .main-header-bottom{
     display: none;
+    background-color: #EAC926;
 }
 
 .main-header-top a{
@@ -38,6 +42,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     width: 50%;
+    justify-content: center;
 }
 
 .search-bar input {
@@ -86,10 +91,12 @@ body {
 
 
 /* Main Home*/
-.main-section{
-    margin: 0 auto;
+.main-home{
+    /* NO CAMBIAR */
     padding-bottom: 5px;
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
+    /*  */
 }
 
 main section{
@@ -97,8 +104,10 @@ main section{
 }
 
 .product-bottom{
+    /* NO CAMBIAR */
     border-top: solid 1px #ebebeb;
     padding: 15px;
+    /*  */
     position: relative;
     transition: all 450ms;
 }
@@ -109,8 +118,7 @@ main section{
 
 .product{
     background-color: #fff;
-    margin: 20px 0;
-    padding: 20px 0;
+    margin: 10px 0;
     transition: all 300ms;
 }
 
@@ -149,11 +157,14 @@ main section{
 
 .caja-flex{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .price {
     font-size: 18px;
-    flex-grow: 0.30;
+    width: 30%;
+    padding: 2px;
 }
 
 .discount, .description {
@@ -162,9 +173,18 @@ main section{
 
 .discount{
     color: #39b54a;
-    flex-grow: 0.70;
+    width: 70%;
+    margin: auto;
+    padding-left: 30px;
 }
 
+.description{
+    width: 100%;
+}
+
+.description-box{
+    height: 20px;
+}
 
 /* Main Registro */
 .registration-form{
@@ -225,7 +245,6 @@ main section{
     border:none;
     border-radius: 5%;
     margin:5px;
-
 }
 /*  */
 
@@ -304,11 +323,16 @@ footer section p{
     }
 
     .main-header-top a{
-        width: 30%;
+        width: 25%;
+    }
+
+    .logo{
+        object-fit: cover;
+        padding: 0 10px;
     }
 
     .search-bar{
-        width: 35%;
+        width: 40%;
     }
     
     .buy {
@@ -335,12 +359,15 @@ footer section p{
         text-align: center;
     }
     
+    .first-list li, .second-list li{
+        text-align: center;
+    }
 
     /* Main Home*/
     .articles{
         display: flex;
         flex-direction: row; 
-        justify-content: space-around;
+        justify-content: space-between;
         flex-wrap: wrap;
     }
 
@@ -354,6 +381,10 @@ footer section p{
 /* DESKTOP */
 @media (min-width:769px){
     /* Main Home */
+    .main-header-top{
+        height: fit-content;
+    }
+    
     .main-header-bottom ul{
         margin: 5px;
     }
@@ -362,9 +393,14 @@ footer section p{
         width: 23%;
     }
 
+    .logo{
+        padding-left: 20px;
+        max-width: 220px;
+    }
+
     /* Main Login */
     .main-login-form{
-        margin: 10vh;
+        margin: 14vh;
     }
 
     /* Footer */
