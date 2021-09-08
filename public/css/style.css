@@ -193,6 +193,10 @@ main section{
     padding: 10px;
 }
 
+.registration-form input{
+    outline:none;
+}
+
 .control{
     width: 100%;
     padding: 8px;
@@ -260,6 +264,7 @@ main section{
     margin-bottom: 20px;
     padding:8px;
     border: none;
+    outline: none;
 }
 
 .submit-button{
